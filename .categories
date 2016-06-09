@@ -3,4 +3,5 @@ lang:java
 lang:python
 lang:arduino
 lang:particle
+lang:C
 sku:BMP180_I2CS
