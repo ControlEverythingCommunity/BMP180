@@ -68,7 +68,7 @@ Download (or git pull) the code in Beaglebone Black.
 
 Compile the c program.
 ```cpp
-$>gcc BMP180.c -o BMP180
+$>gcc BMP180.c -o BMP180 -lm
 ```
 Run the c program.
 ```cpp
