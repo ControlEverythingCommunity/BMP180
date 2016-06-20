@@ -14,7 +14,7 @@
 int coff[11] = {0};
 unsigned int AC4 = 0, AC5 = 0, AC6 = 0;
 unsigned int data[3] = {0};
-float cTemp = 0.0, fTemp = 0.0, pressure = 0.0, height = 0.0;
+double cTemp = 0.0, fTemp = 0.0, pressure = 0.0, height = 0.0;
 int temp = 0;
 long pres = 0;
 
@@ -163,8 +163,11 @@ void loop()
 
   // Output data to dashboard
   Particle.publish("Altitude in meters : ", String(height));
+  delay(1000);
   Particle.publish("Pressure in hPa : ", String(pressure));
+  delay(1000);
   Particle.publish("Temperature in Celsius : ", String(cTemp));
+  delay(1000);
   Particle.publish("Temperature in Fahrenheit : ", String(fTemp));
   delay(1000);
 }
